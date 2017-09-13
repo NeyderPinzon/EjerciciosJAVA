@@ -15,11 +15,14 @@ public class EjercicioDos {
     public static void main(String[] args) {
         
         String nombre;
+        //Los comandos para variables deben ser escritos en mayuscula 
         Scanner miEscarnernuevo = new Scanner (System.in);
+        //Asi se crea un Scanner
         System.out.println("Por favor ingrese su nombre: ");
-        nombre = miEscarnernuevo.nextLine();
+        nombre = miEscarnernuevo.nextLine(); 
+        //este Scanner es el que acabamos de crear
         System.out.println("El nombre ingresado es: " + nombre);
-                
+                        
     }
     
 }
