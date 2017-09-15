@@ -15,7 +15,7 @@ public class EjercicioCuatro {
             int edad;
             Scanner entradaPorTeclado = new Scanner(System.in);
             System.out.println("Ingresa tu edad: ");
-            edad = entradaPorTeclado.nextInt();
+            edad = entradaPorTeclado.nextInt();//no me corre como esperaba, Noencontre el error
             System.out.println("Ingresa tu nombre: ");
             nombre = entradaPorTeclado.nextLine();
             System.out.println("Usted se llama: " + nombre + " y tiene: " + edad);
