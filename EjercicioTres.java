@@ -14,9 +14,19 @@ public class EjercicioTres {
         
         String nombre;
         String apellido;
-        Scanner entradaPorTeclado = new Scanner(System.in);
+        Scanner entradaPorTeclado = new Scanner(System.in);//creacion del Scanner
         System.out.println("Por favor ingrese su Nombre: ");
-        nombre = entradaPorTeclado.nextLine();
+        nombre = entradaPorTeclado.nextLine();//definiendo variable 1
+        System.out.println("Por favor ingrese su Apellido: ");
+        apellido = entradaPorTeclado.nextLine();//definiendo variable 2
+        System.out.println("Su Nombre es: " + nombre +  " y su apellido es: "+ apellido);
+        
+        /**
+         * System.out.println ("Su nombre " + nombre + "y su apellido es "+ apellido);
+         * APRENDIENDO A CONCATENAR, SE ME DIFICULTA UN POCO, TUVE QUE BUSCAR
+         * EL EJEMPLO EN INTERNET.
+         */
+        
         
         
         
