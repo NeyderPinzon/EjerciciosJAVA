@@ -17,8 +17,7 @@ public class EjercicioTres {
         Scanner entradaPorTeclado = new Scanner(System.in);
         System.out.println("Por favor ingrese su Nombre: ");
         nombre = entradaPorTeclado.nextLine();
-        System.out.println("Por favor ingrese su apellido: ");
-        apellido = entradaPorTeclado.nextLine();
+        
         
         
         
