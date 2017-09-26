@@ -10,10 +10,10 @@ public class MesAño {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-        
+        String DatoAux;
         String mesDelAño;
         String Vacaciones;
-        int edad;
+        Integer edad;
         //si paso los 80 años y va de vacaciones en invierno debe mostar
         //vacunate contra la gripe
         
@@ -22,7 +22,8 @@ public class MesAño {
         System.out.println("Vas de vacaciones?");
         Vacaciones = entrada.next();
         System.out.println("Ingrese su edad: ");
-        edad = entrada.nextInt();
+        DatoAux = entrada.next();
+        edad = Integer.parseInt(DatoAux);
                      
         //aprendiendo a utilizar switch, replazando If....Else
         if (Vacaciones.equals("si"))
