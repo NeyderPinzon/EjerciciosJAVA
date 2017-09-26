@@ -15,13 +15,14 @@ public class AdividaElNumero {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
         Scanner entrada = new Scanner(System.in);
         Integer numero;
         Integer numeroIngresado;
         String dato;
         //leemos la variable
         // parseamos
-        Integer miNumeroSecreto =(int) (Math.random()* 10)+1;
+        Integer miNumeroSecreto = (int) (Math.random()* 10)+1;
         
         //System.out.println("numero secreto "+ miNumeroSecreto);
         
@@ -29,7 +30,7 @@ public class AdividaElNumero {
         dato= entrada.next();
         numeroIngresado = Integer.parseInt(dato);
         
-        switch (numeroIngresado){
+       /* switch (numeroIngresado){
             case 5 :
                 System.out.println("Acertaste!!!");
                 break;
@@ -47,15 +48,18 @@ public class AdividaElNumero {
                 break;
             default  :
                 System.out.println("sos horrible en este juego");
-                
-        } 
+           */    
+       if (numeroIngresado < miNumeroSecreto){
+           System.out.println("casi casi");
+           
+           }else if(numeroIngresado > miNumeroSecreto){
+           System.out.println("casi casi");
+           
+       }
+       if (numeroIngresado == miNumeroSecreto){
+           System.out.println("que suerte!!!");
+           }        
+    } 
         
-        /**
-         * a) si erro por un punto mensaje "casi, casi"
-         * b) si eero por dos puntos "cerca"
-         * c) si erro por tes puntos "ni cerca"
-         * d) si erro por cuatro puntos "bien lejos"
-         * para todos los demas "sos horrible en este juego"
-         */
-    }
+        
 }
