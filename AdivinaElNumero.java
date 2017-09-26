@@ -7,6 +7,13 @@ public class AdivinaElNumero {
 
     /**
      * @param args the command line arguments
+     * informar si:
+     * a) si erro por un punto mensaje "casi, casi"
+     * b) si eero por dos puntos "cerca"
+     * c) si erro por tes puntos "ni cerca"
+     * d) si erro por cuatro puntos "bine lejos"
+     * para todos los demas "sos horrible en este juego"
+     * 
      */
     public static void main(String[] args) {
         // TODO code application logic here
