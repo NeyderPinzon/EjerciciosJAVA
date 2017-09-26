@@ -45,14 +45,30 @@ public class FerreteriaFerrere {
          //recordar todo para no olvidar, debo estudia en casa todo los dias si
          //es posible
          System.out.printf(" la cantidad de Cal que necesito es: %d \n"
-                 + "la cantidad de cemento que necesito es: %d \n"
+                 + "la cantidad de cemento que necesito es: %d \n\n"
          , (material* 2),(material*3));
          
          
          //se pide una temperatura y se pide si se quiere pasar Celsius o 
          //Fahrenheit, hacer la cuenta y mostrar el resultado
+         //formula para pasar a una temperatura :F = ºC x 1.8 + 32, 
+         //ºC = (ºF-32) ÷ 1.8
+            
+         String temperatura;
          
+         System.out.println("Ingrese una temperatura: ");
+         temperatura = entrada.next();
          
+
+
+// TERMINAR ESTO EN CASA
+         temperatura = ((-32)/1.8);
+        if (temperatura.equals(" "))         
+        {
+            System.out.println("la temperatura en centrigrados es:  "+ temperatura);
+        }
+             
+               
     }
     
 }
