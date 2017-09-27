@@ -20,11 +20,12 @@ public class AdividaElNumero {
         Integer numero;
         Integer numeroIngresado;
         String dato;
+        Integer distinto;
         //leemos la variable
         // parseamos
         Integer miNumeroSecreto = (int) (Math.random()* 10)+1;
         
-        //System.out.println("numero secreto "+ miNumeroSecreto);
+        System.out.println("numero secreto "+ miNumeroSecreto);
         
         System.out.println("Ingrese un numero: ");       
         dato= entrada.next();
@@ -49,16 +50,32 @@ public class AdividaElNumero {
             default  :
                 System.out.println("sos horrible en este juego");
            */    
-       if (numeroIngresado < miNumeroSecreto){
-           System.out.println("casi casi");
-           
-           }else if(numeroIngresado > miNumeroSecreto){
-           System.out.println("casi casi");
-           
+       if (numeroIngresado > miNumeroSecreto){
+           distinto = numeroIngresado - miNumeroSecreto;                   
+           }else {
+           distinto = miNumeroSecreto - numeroIngresado;      
+       } 
+       if (numeroIngresado.equals(miNumeroSecreto))
+               {
+                   System.out.println("Acerto!!!");  
+               }else {
+                switch (distinto){
+               case 1 : 
+                   System.out.println("casi casi");
+                   break;
+               case 2 :
+                   System.out.println("cerca");
+                   break;
+               case 3 :
+                   System.out.println("ni cerca");
+                   break;
+               case 4 :
+                   System.out.println("bien lejos");
+                   break;
+               default :  
+                   System.out.println("sos horrible para este juego");    
+            }                       
        }
-       if (numeroIngresado == miNumeroSecreto){
-           System.out.println("que suerte!!!");
-           }        
     } 
         
         
