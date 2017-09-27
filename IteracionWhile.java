@@ -23,6 +23,15 @@ public class IteracionWhile {
         Clave= entrada.next();
       }
         System.out.println("bienvenido");
+        
+        Integer contador=0;
+        
+        while(contador<2)
+        {
+            contador=contador+1;
+            System.out.println(contador+ "...contando");
+        }
+            System.out.println("termine"); 
     }
 }    
     
