@@ -21,7 +21,7 @@ public class FerreteriaFerreteLamparas {
         String AuxCantidad;
         Integer precioBruto;
         Double precioFinal= (double)0;
-        
+                
         System.out.println("Ingrese la marca: ");
         marca = entrada.next();
         
@@ -30,6 +30,7 @@ public class FerreteriaFerreteLamparas {
         cantidad = Integer.parseInt(AuxCantidad);
         
         precioBruto = cantidad * precio;
+        
         
         if (cantidad>5)
         { 
@@ -68,16 +69,20 @@ public class FerreteriaFerreteLamparas {
                             
                             precioFinal = precioBruto* 0.85;
                         
-                    }else  if(marca.equals("felipelamparas")){
+                    }else if(marca.equals("felipelamparas"))
+                    {
                             System.out.println(precioBruto);
                             precioFinal = precioBruto* 0.90;  
                     }
+                    
                     
             }             
             
         }    
         
-        System.out.println("Debe pagar: " + precioFinal);
+        System.out.println("usted pago: \n" 
+                +precioFinal "siendo : \n"
+                + "el ingreso que se pago");
         
         }
     
