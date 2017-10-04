@@ -49,11 +49,10 @@ public class GuiaWhile {
             numeros = Integer.parseInt(aux);
             
             if (numeros%2==0){
-                numerosPares = numerosPares+1;
-                
+                contador++;
+             System.out.println("numeros pares: "+numerosPares); 
             }
         }
-        System.out.println("numeros pares: "+numerosPares); 
         
     
     }
@@ -114,6 +113,7 @@ public class GuiaWhile {
     public static void Promedio(){
         String respuesta;
         Integer contador=0;
+        Integer edad=0;
         Scanner entrada = new Scanner(System.in);
         
         System.out.println("hay alguien para la edad???");
@@ -127,11 +127,36 @@ public class GuiaWhile {
             
             System.out.println("hay alguien mas???");
             respuesta = entrada.next();
-        }
-        
-        
-    }
+        if (edad>100){
          
+            respuesta = "no"
+            }
+        
+        }    
+    }
+    public static void mostarPares(){
+        //mostrar todo los numeros pares hasta el 100
+        
+        Integer contador=0;
+        
+        while (contador<100){
+               
+            contador++;
+            if (contador%2==0){
+                System.out.println("es par: "+contador);
+            }
+        }
+    }
+    public static void mostrarImpares(){
+      Integer contador=0;
+        
+        while (contador<100){
+               
+            contador++;
+            if (contador%2==0){
+                System.out.println("es par: "+contador);
+            } 
+        }  
     }
 }
     
