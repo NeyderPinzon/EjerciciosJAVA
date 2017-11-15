@@ -29,9 +29,9 @@ public class Producto {
     }
     public void MostrarProducto()
     {
-        System.out.println("el priducto es: "+ this._descripcion);
-        System.out.println("el priducto es: "+ this._precio);
-        System.out.println("el priducto es: "+ this._cantidad);
+        System.out.println("El producto es: "+ this._descripcion);
+        System.out.println("El precio es: "+ this._precio);
+        System.out.println("La cantidad es: "+ this._cantidad);
     }
     public float DamePrecioFinal()
     {

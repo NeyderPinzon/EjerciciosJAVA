@@ -12,7 +12,7 @@ package ejemplofacturacion;
 public class Persona {
     private String _nombre;
     private String _apellido;
-    public Persona(String nom, String ape)
+    public Persona(String nom, String ape) 
     {
         this._nombre= nom;
         this._apellido= ape;
@@ -21,7 +21,7 @@ public class Persona {
     }
     public void MostrarPersona()
     {
-        System.out.println("nombre: "+ this._nombre+ "apellido: "+ this._apellido);
+        System.out.println("Nombre: "+ this._nombre+   "Apellido: "+ this._apellido);
     }
   
     
