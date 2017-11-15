@@ -13,7 +13,15 @@ public class Venta {
     
     public Persona ELcliente;
     public Persona Elempleado;
-    public Producto productoVendido;
+    //public Producto productoVendido;
+    public Producto[] ListadoDeProductos;
+    
+    public Venta()
+    {
+        this.ListadoDeProductos = new Producto[3];
+    }
+    
+    
     
     public void MostrarVenta()
     {
@@ -24,10 +32,20 @@ public class Venta {
         ELcliente.MostrarPersona();
         
         System.out.println("El producto es: ");
-        productoVendido.MostrarProducto();
+        //productoVendido.MostrarProducto();
+        for (int i = 0; i < this.ListadoDeProductos.length; i++)
+        {
+           this.ListadoDeProductos[i].MostrarProducto();
+        }
         
-        float aux;
-        aux = productoVendido.DamePrecioFinal();
+        float aux=0;
+        //aux = productoVendido.DamePrecioFinal();
+        //aux = this.ListadoDeProductos[0].DamePrecioFinal()+this.ListadoDeProductos[1].DamePrecioFinal()+this.ListadoDeProductos[2].DamePrecioFinal();
+        for (int i = 0; i < this.ListadoDeProductos.length; i++)
+        {
+            aux = aux + this.ListadoDeProductos[1].DamePrecioFinal();
+        }
+        
         System.out.println("El importe a pagar es : "+aux);
         
     }
