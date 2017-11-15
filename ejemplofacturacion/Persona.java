@@ -23,6 +23,12 @@ public class Persona {
     {
         System.out.println("Nombre: "+ this._nombre+   "Apellido: "+ this._apellido);
     }
-  
+  public static Persona RetornarPersonaRandom()
+  {
+      Persona retorno = new Persona("natalia","natalia");
+      
+      
+      return retorno;
+  }
     
 }

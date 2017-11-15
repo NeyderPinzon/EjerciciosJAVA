@@ -16,8 +16,21 @@ public class EjemploFacturacion {
        Venta NuevaVenta ;
        NuevaVenta = new Venta();
        
+       
+       NuevaVenta.ELcliente = Persona.RetornarPersonaRandom();
+       NuevaVenta.Elempleado = Persona.RetornarPersonaRandom();
+       
+       NuevaVenta.CargarProducto(Producto.RetornarProductoRandom());
+       NuevaVenta.CargarProducto(Producto.RetornarProductoRandom());
+       
+       NuevaVenta.MostrarVenta();
+       
+       
+       
+       /*
        Persona unCliente = new Persona("Jose ", " Felix");
        Persona unEmpleado = new Persona("Martin " , "Fierro ");
+
        Producto unProducto = new Producto();
        unProducto.Settercantidad(3);
        unProducto.SetterDescrip("Fanta");
@@ -32,15 +45,15 @@ public class EjemploFacturacion {
        unProducto3.Settercantidad(3);
        unProducto3.SetterDescrip("Cocacola");
        unProducto3.SetterPrecio(45);
+       */
        
-       NuevaVenta.ELcliente = unCliente;
-       NuevaVenta.Elempleado = unEmpleado;
+       /*
        //NuevaVenta.productoVendido = unProducto;
        NuevaVenta.ListadoDeProductos[0] = unProducto;
        NuevaVenta.ListadoDeProductos[1] = unProducto2;
        NuevaVenta.ListadoDeProductos[2] = unProducto3;
-            
-       NuevaVenta.MostrarVenta(); 
+       */
+       
         
     }
     

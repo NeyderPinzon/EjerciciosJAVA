@@ -41,4 +41,13 @@ public class Producto {
         
         return retorno;
     }
+    
+    public static Producto RetornarProductoRandom()
+    {
+        Producto retornar = new Producto();
+        retornar._cantidad;
+        retornar._
+        
+        return retornar;        
+    }
 }
